@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Bulan Mei 2022 pada 10.42
+-- Waktu pembuatan: 31 Bulan Mei 2022 pada 12.15
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -24,6 +24,49 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `barang`
+--
+
+CREATE TABLE `barang` (
+  `brgid` int(11) UNSIGNED NOT NULL,
+  `brgnama` varchar(100) NOT NULL,
+  `brgkat` int(11) NOT NULL,
+  `brgsubkat` int(11) NOT NULL,
+  `brgharga` double(10,2) NOT NULL,
+  `brgstok` int(11) NOT NULL,
+  `brggambar` varchar(200) NOT NULL,
+  `brgdeskripsi` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data untuk tabel `barang`
+--
+
+INSERT INTO `barang` (`brgid`, `brgnama`, `brgkat`, `brgsubkat`, `brgharga`, `brgstok`, `brggambar`, `brgdeskripsi`) VALUES
+(1, 'Carmila 350', 1, 3, 1200.00, 100000, '1.jpg', 'Undangan pernikahan\r\n\r\nSpesifikasi\r\nUkuran Terbuka : 20,5 x 24 (Cm)\r\nUkuran Tertutup : 12 x 20,5 (Cm)\r\nUkuran Plastik : 12,5 x 22 (Cm)\r\nJenis Kertas : BC\r\nJenis Blangko : Softcover\r\n\r\nInfo :\r\ndesign s'),
+(2, 'Byar 63', 1, 2, 1200.00, 10000, '2.jpg', 'Undangan pernikahan\r\n\r\nSpesifikasi :\r\nUkuran Terlipat : 12.8 x 205 (Cm)\r\nUkuran Plastik : 13,5 x 22 (Cm)\r\nJenis Kertas : BC\r\nJenis Blangko : Softcover\r\n\r\nInfo :\r\ndesign sesuai dengan keinginan.\r\nharga');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `kategori`
+--
+
+CREATE TABLE `kategori` (
+  `katid` int(5) UNSIGNED NOT NULL,
+  `katnama` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data untuk tabel `kategori`
+--
+
+INSERT INTO `kategori` (`katid`, `katnama`) VALUES
+(1, 'Undangan');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `levels`
 --
 
@@ -39,6 +82,52 @@ CREATE TABLE `levels` (
 INSERT INTO `levels` (`levelid`, `levelnama`) VALUES
 (1, 'Admin'),
 (2, 'User');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `migrations`
+--
+
+CREATE TABLE `migrations` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `version` varchar(255) NOT NULL,
+  `class` varchar(255) NOT NULL,
+  `group` varchar(255) NOT NULL,
+  `namespace` varchar(255) NOT NULL,
+  `time` int(11) NOT NULL,
+  `batch` int(11) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data untuk tabel `migrations`
+--
+
+INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`, `batch`) VALUES
+(11, '2022-05-30-102343', 'App\\Database\\Migrations\\Kategori', 'default', 'App', 1653907705, 1),
+(12, '2022-05-30-103429', 'App\\Database\\Migrations\\SubKategori', 'default', 'App', 1653907705, 1),
+(13, '2022-05-30-103836', 'App\\Database\\Migrations\\Barang', 'default', 'App', 1653907705, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `subkategori`
+--
+
+CREATE TABLE `subkategori` (
+  `subkatid` int(5) UNSIGNED NOT NULL,
+  `subkatnama` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data untuk tabel `subkategori`
+--
+
+INSERT INTO `subkategori` (`subkatid`, `subkatnama`) VALUES
+(1, 'Cantik'),
+(2, 'Byar'),
+(3, 'Rayya'),
+(4, 'Lintang');
 
 -- --------------------------------------------------------
 
@@ -68,10 +157,34 @@ INSERT INTO `users` (`userid`, `usernama`, `userfoto`, `useremail`, `userpasswor
 --
 
 --
+-- Indeks untuk tabel `barang`
+--
+ALTER TABLE `barang`
+  ADD PRIMARY KEY (`brgid`) USING BTREE;
+
+--
+-- Indeks untuk tabel `kategori`
+--
+ALTER TABLE `kategori`
+  ADD PRIMARY KEY (`katid`);
+
+--
 -- Indeks untuk tabel `levels`
 --
 ALTER TABLE `levels`
   ADD KEY `levelid` (`levelid`);
+
+--
+-- Indeks untuk tabel `migrations`
+--
+ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `subkategori`
+--
+ALTER TABLE `subkategori`
+  ADD PRIMARY KEY (`subkatid`);
 
 --
 -- Indeks untuk tabel `users`
@@ -79,6 +192,34 @@ ALTER TABLE `levels`
 ALTER TABLE `users`
   ADD PRIMARY KEY (`userid`),
   ADD KEY `level` (`userlevelid`);
+
+--
+-- AUTO_INCREMENT untuk tabel yang dibuang
+--
+
+--
+-- AUTO_INCREMENT untuk tabel `barang`
+--
+ALTER TABLE `barang`
+  MODIFY `brgid` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT untuk tabel `kategori`
+--
+ALTER TABLE `kategori`
+  MODIFY `katid` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `migrations`
+--
+ALTER TABLE `migrations`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT untuk tabel `subkategori`
+--
+ALTER TABLE `subkategori`
+  MODIFY `subkatid` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

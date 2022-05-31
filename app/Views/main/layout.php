@@ -15,11 +15,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sekoenol</title>
     <!-- CSS files -->
-    <link href="./dist/css/tabler.min.css" rel="stylesheet" />
-    <link href="./dist/css/tabler-flags.min.css" rel="stylesheet" />
-    <link href="./dist/css/tabler-payments.min.css" rel="stylesheet" />
-    <link href="./dist/css/tabler-vendors.min.css" rel="stylesheet" />
-    <link href="./dist/css/demo.min.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>/dist/css/tabler.min.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>/dist/css/tabler-flags.min.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>/dist/css/tabler-payments.min.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>/dist/css/tabler-vendors.min.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>/dist/css/demo.min.css" rel="stylesheet" />
 
     <link href="<?= base_url() ?>/dist/img/logo.png" rel="icon">
     <link href="<?= base_url() ?>/dist/img/logo.png" rel="apple-touch-icon">
@@ -35,9 +35,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
-                        <a href=".">
-                            <img src="<?= base_url() ?>/dist/img/logo.png" width="110" height="32" alt="Tabler" class="navbar-brand-image">
-                        </a>
+                        <img src="<?= base_url() ?>/dist/img/logo.png" width="110" height="50" alt="Tabler" class="navbar-brand-image"> <i>SEKOENOL</i>
                     </h1>
                     <div class="navbar-nav nav-item flex-row order-md-last">
                         <div class="col-6 col-sm-4 col-md-2 col-xl mt-1">
@@ -152,77 +150,94 @@
         <div class="page-wrapper">
             <div class="page-body">
                 <div class="container-xl">
-                    <div class="row row-deck row-cards">
 
-                        <div class="card">
+                    <?php
+                    if ($title == "Halaman pertama") {
+                    ?>
 
-                            <div class="col-md-12 mb-2 mt-2">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div id="carousel-captions" class="carousel slide" data-bs-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100" alt="" src="<?= base_url() ?>/upload/123.jpg" height="400px">
-                                                    <div class="carousel-caption-background d-none d-md-block"></div>
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h3>Slide label</h3>
-                                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+
+
+                        <div class="row row-deck row-cards">
+
+                            <div class="card">
+
+                                <div class="col-md-12 mb-2 mt-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div id="carousel-captions" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="d-block w-100" alt="" src="<?= base_url() ?>/upload/123.jpg" height="400px">
+                                                        <div class="carousel-caption-background d-none d-md-block"></div>
+                                                        <div class="carousel-caption d-none d-md-block">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100" alt="" src="<?= base_url() ?>/upload/1234.jpg" height="400px">
+                                                        <div class="carousel-caption-background d-none d-md-block"></div>
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h3>Slide label</h3>
+                                                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100" alt="" src="<?= base_url() ?>/upload/as.jpg" height="400px">
+                                                        <div class="carousel-caption-background d-none d-md-block"></div>
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h3>Slide label</h3>
+                                                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" alt="" src="<?= base_url() ?>/upload/1234.jpg" height="400px">
-                                                    <div class="carousel-caption-background d-none d-md-block"></div>
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h3>Slide label</h3>
-                                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" alt="" src="<?= base_url() ?>/upload/as.jpg" height="400px">
-                                                    <div class="carousel-caption-background d-none d-md-block"></div>
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h3>Slide label</h3>
-                                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                                    </div>
-                                                </div>
+                                                <a class="carousel-control-prev" href="#carousel-captions" role="button" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carousel-captions" role="button" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </a>
                                             </div>
-                                            <a class="carousel-control-prev" href="#carousel-captions" role="button" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carousel-captions" role="button" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
+
+
                             </div>
 
-
-                        </div>
-
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="card">
-
-
-
-                                        <img src="<?= base_url() ?>/upload/123.jpg" alt="Los Angeles" width="1100" height="500">
-
-                                    </div>
-
-                                    <div class="card-body">
-                                        <h3 class="card-title">Card with top image</h3>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt, iste, itaque minima
-                                            neque pariatur perferendis sed suscipit velit vitae voluptatem.</p>
-                                    </div>
+                            <?php
+                            foreach ($tampildata->getResultArray() as $row) :
+                            ?>
+                                <div class="col-sm-6 col-lg-3">
+                                    <a style="text-decoration: none;" href="<?= base_url() ?>/main/detailbarang/<?= $row['brgid'] ?>">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card">
+                                                    <center>
+                                                        <img src="<?= base_url() ?>/upload/<?= $row['brggambar'] ?>" alt="Los Angeles" width="300" height="300">
+                                                    </center>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h3 class="card-title"><?= $row['brgnama'] ?></h3>
+                                                    <p class="text-muted strong">Rp. <?= number_format($row['brgharga'], 0, ",", ".") ?></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            <?php endforeach; ?>
 
+                        </div>
+
+
+                    <?php
+                    } else {
+                    ?>
+                        <?= $this->renderSection('isi'); ?>
+                    <?php
+                    }
+                    ?>
 
 
                 </div>
@@ -253,12 +268,12 @@
     </div>
     </div>
     <!-- Libs JS -->
-    <script src="./dist/libs/apexcharts/dist/apexcharts.min.js" defer></script>
-    <script src="./dist/libs/jsvectormap/dist/js/jsvectormap.min.js" defer></script>
-    <script src="./dist/libs/jsvectormap/dist/maps/world.js" defer></script>
-    <script src="./dist/libs/jsvectormap/dist/maps/world-merc.js" defer></script>
+    <script src="<?= base_url() ?>/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script>
+    <script src="<?= base_url() ?>/dist/libs/jsvectormap/dist/js/jsvectormap.min.js" defer></script>
+    <script src="<?= base_url() ?>/dist/libs/jsvectormap/dist/maps/world.js" defer></script>
+    <script src="<?= base_url() ?>/dist/libs/jsvectormap/dist/maps/world-merc.js" defer></script>
     <!-- Tabler Core -->
-    <script src="./dist/js/tabler.min.js" defer></script>
+    <script src="<?= base_url() ?>/dist/js/tabler.min.js" defer></script>
 
 </body>
 

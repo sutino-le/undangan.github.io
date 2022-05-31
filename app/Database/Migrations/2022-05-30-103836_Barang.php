@@ -40,8 +40,7 @@ class Barang extends Migration
                 'constraint' => '200',
             ],
             'brgdeskripsi'       => [
-                'type'       => 'VARCHAR',
-                'constraint' => '200',
+                'type'       => 'TEXT',
             ],
         ]);
         $this->forge->addKey('brgid', true);
