@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\ModelBarang;
+use App\Models\ModelKategori;
+use App\Models\ModelSubKategori;
 
 class Main extends BaseController
 {
@@ -22,10 +24,25 @@ class Main extends BaseController
 
     public function detailbarang($brgid)
     {
+        $modelBarang = new ModelBarang();
+        $cekData = $modelBarang->find($brgid);
+
+        $modelKategori = new ModelKategori();
+        $cekKat = $modelKategori->find($cekData['brgkat']);
+
+        $modelsubkategori = new ModelSubKategori();
+        $cekSubKat = $modelsubkategori->find($cekData['brgsubkat']);
 
         $data = [
-            'title' => 'Halaman Detail',
-            'tampildata' => $this->barang->detailbarang($brgid)
+            'title'             => 'Halaman Detail',
+            'brgid'             => $cekData['brgid'],
+            'brgnama'           => $cekData['brgnama'],
+            'brgkat'            => $cekKat['katnama'],
+            'brgsubkat'         => $cekSubKat['subkatnama'],
+            'brgharga'          => $cekData['brgharga'],
+            'brgstok'           => $cekData['brgstok'],
+            'brggambar'         => $cekData['brggambar'],
+            'brgdeskripsi'      => $cekData['brgdeskripsi'],
         ];
         return view('main/detailbarang', $data);
     }

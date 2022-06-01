@@ -21,6 +21,6 @@ class ModelBarang extends Model
 
     public function detailbarang($brgid)
     {
-        return $this->table('barang')->join('kategori', 'brgkat=katid')->join('subkategori', 'brgsubkat=subkatid')->orlike('brgid', $brgid);
+        return $this->table('barang')->join('kategori', 'brgkat=katid')->join('subkategori', 'brgsubkat=subkatid')->orlike('brgid', $brgid)->get();
     }
 }

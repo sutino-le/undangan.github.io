@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 31 Bulan Mei 2022 pada 12.15
+-- Waktu pembuatan: 01 Jun 2022 pada 12.24
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -43,8 +43,8 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`brgid`, `brgnama`, `brgkat`, `brgsubkat`, `brgharga`, `brgstok`, `brggambar`, `brgdeskripsi`) VALUES
-(1, 'Carmila 350', 1, 3, 1200.00, 100000, '1.jpg', 'Undangan pernikahan\r\n\r\nSpesifikasi\r\nUkuran Terbuka : 20,5 x 24 (Cm)\r\nUkuran Tertutup : 12 x 20,5 (Cm)\r\nUkuran Plastik : 12,5 x 22 (Cm)\r\nJenis Kertas : BC\r\nJenis Blangko : Softcover\r\n\r\nInfo :\r\ndesign s'),
-(2, 'Byar 63', 1, 2, 1200.00, 10000, '2.jpg', 'Undangan pernikahan\r\n\r\nSpesifikasi :\r\nUkuran Terlipat : 12.8 x 205 (Cm)\r\nUkuran Plastik : 13,5 x 22 (Cm)\r\nJenis Kertas : BC\r\nJenis Blangko : Softcover\r\n\r\nInfo :\r\ndesign sesuai dengan keinginan.\r\nharga');
+(1, 'Carmila 350', 1, 3, 1200.00, 100000, '1.jpg', 'Undangan pernikahan<br>\r\n<br>\r\nSpesifikasi<br>\r\nUkuran Terbuka : 20,5 x 24 (Cm)<br>\r\nUkuran Tertutup : 12 x 20,5 (Cm)<br>\r\nUkuran Plastik : 12,5 x 22 (Cm)<br>\r\nJenis Kertas : BC<br>\r\nJenis Blangko : Softcover<br>\r\n<br>\r\nInfo :<br>\r\ndesign sesuai dengan keinginan.<br>\r\nharga tercantum belum termasuk plastik<br>\r\nminimal order 300<br>\r\n'),
+(2, 'Byar 63', 1, 2, 1200.00, 10000, '2.jpg', 'Undangan pernikahan<br>\r\n<br>\r\nSpesifikasi :<br>\r\nUkuran Terlipat : 12.8 x 205 (Cm)<br>\r\nUkuran Plastik : 13,5 x 22 (Cm)<br>\r\nJenis Kertas : BC<br>\r\nJenis Blangko : Softcover<br>\r\n<br>\r\nInfo :<br>\r\ndesign sesuai dengan keinginan.<br>\r\nharga tercantum belum termasuk plastik\r\nminimal order 300<br>');
 
 -- --------------------------------------------------------
 

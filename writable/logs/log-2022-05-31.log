@@ -49,3 +49,121 @@ CRITICAL - 2022-05-31 04:30:45 --> Call to undefined method CodeIgniter\View\Vie
 #7 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #9 {main}
+ERROR - 2022-05-31 20:04:37 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-05-31 20:04:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\undangan\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\undangan\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\undangan\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\undangan\app\Models\ModelBarang.php(18): CodeIgniter\Model->__call('get', Array)
+#4 C:\xampp\htdocs\undangan\app\Controllers\Main.php(18): App\Models\ModelBarang->tampildata()
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Main->index()
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-31 21:04:44 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\undangan\app\Views\main\detailbarang.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('main/detailbara...', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\Main.php(30): view('main/detailbara...', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Main->detailbarang('1')
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-31 21:05:05 --> Call to undefined method App\Models\ModelBarang::getResultArray
+#0 C:\xampp\htdocs\undangan\app\Views\main\detailbarang.php(36): CodeIgniter\Model->__call('getResultArray', Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('main/detailbara...', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\Main.php(30): view('main/detailbara...', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Main->detailbarang('1')
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-31 21:05:20 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\undangan\app\Views\main\detailbarang.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('main/detailbara...', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\Main.php(30): view('main/detailbara...', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Main->detailbarang('1')
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-31 21:08:54 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\undangan\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('main/detailbara...', Array, true)
+#3 C:\xampp\htdocs\undangan\app\Controllers\Main.php(30): view('main/detailbara...', Array)
+#4 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Main->detailbarang('1')
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-05-31 21:11:35 --> Call to a member function getResultArray() on array
+#0 C:\xampp\htdocs\undangan\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('main/detailbara...', Array, true)
+#3 C:\xampp\htdocs\undangan\app\Controllers\Main.php(30): view('main/detailbara...', Array)
+#4 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Main->detailbarang('1')
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-05-31 21:11:48 --> Illegal string offset 'brgnama'
+#0 C:\xampp\htdocs\undangan\app\Views\main\detailbarang.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('main/detailbara...', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\Main.php(30): view('main/detailbara...', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Main->detailbarang('1')
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-31 21:24:15 --> Undefined index: brgsubkat
+#0 C:\xampp\htdocs\undangan\app\Controllers\Main.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 34, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Main->detailbarang('1')
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-31 21:24:33 --> Undefined variable: tampildata
+#0 C:\xampp\htdocs\undangan\app\Views\main\detailbarang.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('main/detailbara...', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\Main.php(47): view('main/detailbara...', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Main->detailbarang('1')
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-31 21:27:16 --> Undefined variable: brgdetail
+#0 C:\xampp\htdocs\undangan\app\Views\main\detailbarang.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('main/detailbara...', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\Main.php(47): view('main/detailbara...', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Main->detailbarang('1')
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

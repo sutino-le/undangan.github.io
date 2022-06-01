@@ -23,6 +23,7 @@
 
     <link href="<?= base_url() ?>/dist/img/logo.png" rel="icon">
     <link href="<?= base_url() ?>/dist/img/logo.png" rel="apple-touch-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -34,9 +35,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
-                        <img src="<?= base_url() ?>/dist/img/logo.png" width="110" height="50" alt="Tabler" class="navbar-brand-image"> <i>SEKOENOL</i>
-                    </h1>
+                    <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3"><img src="<?= base_url() ?>/dist/img/logo.png" width="110" height="50" alt="Tabler" class="navbar-brand-image"> <i>SEKOENOL</i></h1>
                     <div class="navbar-nav nav-item flex-row order-md-last">
                         <div class="col-6 col-sm-4 col-md-2 col-xl mt-1">
                             <a href="#" class="btn btn-outline-info active w-100">
@@ -215,7 +214,7 @@
                                             <div class="card-body">
                                                 <div class="card">
                                                     <center>
-                                                        <img src="<?= base_url() ?>/upload/<?= $row['brggambar'] ?>" alt="Los Angeles" width="300" height="300">
+                                                        <img src="<?= base_url() ?>/upload/<?= $row['brggambar'] ?>" alt="Los Angeles" width="400" height="200">
                                                     </center>
                                                 </div>
                                                 <div class="card-body">
