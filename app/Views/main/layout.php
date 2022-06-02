@@ -13,7 +13,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Sekoenol</title>
+    <title>Sekoenol <?= $title ?></title>
     <!-- CSS files -->
     <link href="<?= base_url() ?>/dist/css/tabler.min.css" rel="stylesheet" />
     <link href="<?= base_url() ?>/dist/css/tabler-flags.min.css" rel="stylesheet" />
@@ -24,6 +24,9 @@
     <link href="<?= base_url() ?>/dist/img/logo.png" rel="icon">
     <link href="<?= base_url() ?>/dist/img/logo.png" rel="apple-touch-icon">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="<?= base_url() ?>/sweetalert2/sweetalert2.min.css">
+    <script src="<?= base_url() ?>/sweetalert2/sweetalert2.all.min.js"></script>
 
 </head>
 
@@ -38,8 +41,14 @@
                     <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3"><img src="<?= base_url() ?>/dist/img/logo.png" width="110" height="50" alt="Tabler" class="navbar-brand-image"> <i>SEKOENOL</i></h1>
                     <div class="navbar-nav nav-item flex-row order-md-last">
                         <div class="col-6 col-sm-4 col-md-2 col-xl mt-1">
-                            <a href="#" class="btn btn-outline-info active w-100">
+                            <a href="<?= base_url() ?>/main/login" class="btn btn-outline-info active w-100">
                                 Login
+                            </a>
+                        </div>
+                        &nbsp;
+                        <div class="col-6 col-sm-4 col-md-2 col-xl mt-1">
+                            <a href="<?= base_url() ?>/main/daftar" class="btn btn-outline-success active w-100">
+                                Daftar
                             </a>
                         </div>
                     </div>
@@ -151,7 +160,7 @@
                 <div class="container-xl">
 
                     <?php
-                    if ($title == "Halaman pertama") {
+                    if ($title == "") {
                     ?>
 
 
