@@ -23,6 +23,14 @@ class Main extends BaseController
         return view('main/layout', $data);
     }
 
+    public function login()
+    {
+        $data = [
+            'title' => '| Login'
+        ];
+        return view('main/login', $data);
+    }
+
     public function daftar()
     {
         $data = [

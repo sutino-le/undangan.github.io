@@ -28,7 +28,7 @@ if (session()->getFlashdata('berhasil')) {
 ?>
 
 <div class="page page-center">
-    <div class="container-tight ">
+    <div class="container-tight">
         <div class="text-center mb-2">
             <img src="<?= base_url() ?>/dist/img/logo.png" width="110" height="50" alt="Tabler"> <i>SEKOENOL</i>
         </div>
@@ -37,28 +37,28 @@ if (session()->getFlashdata('berhasil')) {
                 <h2 class="card-title text-center mb-4">Buat Akun</h2>
                 <div class="mb-3">
                     <label class="form-label">ID User</label>
-                    <input type="text" name="userid" id="userid" class="form-control <?= (session()->getFlashdata('errUserId')) ? 'is-invalid' : '' ?>" value="<?= old('userid') ?>" placeholder="Enter ID User">
+                    <input type="text" name="userid" id="userid" class="form-control <?= (session()->getFlashdata('errUserId')) ? 'is-invalid' : '' ?>" value="<?= old('userid') ?>" placeholder="Masukan ID User">
                     <div id="validationServer03Feedback" class="invalid-feedback">
                         <?= session()->getFlashdata('errUserId') ?>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Nama Lengkap</label>
-                    <input type="text" name="usernama" id="usernama" class="form-control <?= (session()->getFlashdata('errUserNama')) ? 'is-invalid' : '' ?>" value="<?= old('usernama') ?>" placeholder="Enter Nama Lengkap">
+                    <input type="text" name="usernama" id="usernama" class="form-control <?= (session()->getFlashdata('errUserNama')) ? 'is-invalid' : '' ?>" value="<?= old('usernama') ?>" placeholder="Masukan Nama Lengkap">
                     <div id="validationServer03Feedback" class="invalid-feedback">
                         <?= session()->getFlashdata('errUserNama') ?>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Email address</label>
-                    <input type="email" name="useremail" id="useremail" class="form-control <?= (session()->getFlashdata('errUserEmail')) ? 'is-invalid' : '' ?>" value="<?= old('useremail') ?>" placeholder="Enter email">
+                    <input type="email" name="useremail" id="useremail" class="form-control <?= (session()->getFlashdata('errUserEmail')) ? 'is-invalid' : '' ?>" value="<?= old('useremail') ?>" placeholder="Masukan email">
                     <div id="validationServer03Feedback" class="invalid-feedback">
                         <?= session()->getFlashdata('errUserEmail') ?>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Password</label>
-                    <input type="password" name="userpassword" id="userpassword" class="form-control <?= (session()->getFlashdata('errUserPassword')) ? 'is-invalid' : '' ?>" value="<?= old('userpassword') ?>" placeholder="Password" autocomplete="off">
+                    <input type="password" name="userpassword" id="userpassword" class="form-control <?= (session()->getFlashdata('errUserPassword')) ? 'is-invalid' : '' ?>" value="<?= old('userpassword') ?>" placeholder="Masukan Password" autocomplete="off">
                     <div id="validationServer03Feedback" class="invalid-feedback">
                         <?= session()->getFlashdata('errUserPassword') ?>
                     </div>
