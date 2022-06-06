@@ -40,17 +40,29 @@
                     </button>
                     <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3"><img src="<?= base_url() ?>/dist/img/logo.png" width="110" height="50" alt="Tabler" class="navbar-brand-image"> <i>SEKOENOL</i></h1>
                     <div class="navbar-nav nav-item flex-row order-md-last">
-                        <div class="col-6 col-sm-4 col-md-2 col-xl mt-1">
-                            <a href="<?= base_url() ?>/main/login" class="btn btn-outline-info active w-100">
-                                Login
-                            </a>
-                        </div>
-                        &nbsp;
-                        <div class="col-6 col-sm-4 col-md-2 col-xl mt-1">
-                            <a href="<?= base_url() ?>/main/daftar" class="btn btn-outline-success active w-100">
-                                Daftar
-                            </a>
-                        </div>
+                        <?php
+                        if (session()->levelnama) {
+                        ?>
+                            <div class="col-12 col-sm-4 col-md-2 col-xl mt-1">
+                                <a href="<?= site_url('login/keluar') ?>" class="btn btn-outline-danger active w-100"> Logout &nbsp;</a>
+                            </div>
+                        <?php
+                        } else {
+                        ?>
+                            <div class="col-6 col-sm-4 col-md-2 col-xl mt-1">
+                                <a href="<?= base_url() ?>/login/index" class="btn btn-outline-info active w-100">
+                                    Login
+                                </a>
+                            </div>
+                            &nbsp;
+                            <div class="col-6 col-sm-4 col-md-2 col-xl mt-1">
+                                <a href="<?= base_url() ?>/login/daftar" class="btn btn-outline-success active w-100">
+                                    Daftar
+                                </a>
+                            </div>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
             </header>
@@ -98,7 +110,6 @@
                                                 <div class="dropend">
                                                     <a class="dropdown-item dropdown-toggle" href="#sidebar-cards" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false">
                                                         Cards
-                                                        <span class="badge badge-sm bg-green text-uppercase ms-2">New</span>
                                                     </a>
                                                     <div class="dropdown-menu">
                                                         <a href="./cards.html" class="dropdown-item">

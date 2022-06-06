@@ -17,7 +17,7 @@ if (session()->getFlashdata('berhasil')) {
             confirmButtonText: 'Ya, Login!'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location = "/main/login";
+                window.location = "/login/index";
             } else {
                 window.location = "/main/index";
             }
@@ -32,12 +32,12 @@ if (session()->getFlashdata('berhasil')) {
         <div class="text-center mb-2">
             <img src="<?= base_url() ?>/dist/img/logo.png" width="110" height="50" alt="Tabler"> <i>SEKOENOL</i>
         </div>
-        <form class="card card-md" action="<?= base_url() ?>/main/daftarsimpan" method="post">
+        <form class="card card-md" action="<?= base_url() ?>/login/daftarsimpan" method="post">
             <div class="card-body">
                 <h2 class="card-title text-center mb-4">Buat Akun</h2>
                 <div class="mb-3">
                     <label class="form-label">ID User</label>
-                    <input type="text" name="userid" id="userid" class="form-control <?= (session()->getFlashdata('errUserId')) ? 'is-invalid' : '' ?>" value="<?= old('userid') ?>" placeholder="Masukan ID User">
+                    <input type="text" name="userid" id="userid" class="form-control <?= (session()->getFlashdata('errUserId')) ? 'is-invalid' : '' ?>" value="<?= old('userid') ?>" placeholder="Masukan ID User" autofocus>
                     <div id="validationServer03Feedback" class="invalid-feedback">
                         <?= session()->getFlashdata('errUserId') ?>
                     </div>
@@ -69,7 +69,7 @@ if (session()->getFlashdata('berhasil')) {
             </div>
         </form>
         <div class="text-center text-muted mt-3">
-            Sudah punya akun ? <a href="<?= base_url() ?>/main/login" tabindex="-1">Login</a>
+            Sudah punya akun ? <a href="<?= base_url() ?>/login/index" tabindex="-1">Login</a>
         </div>
     </div>
 </div>

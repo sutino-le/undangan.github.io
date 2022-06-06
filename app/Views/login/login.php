@@ -8,22 +8,26 @@
         <div class="text-center mb-2">
             <img src="<?= base_url() ?>/dist/img/logo.png" width="110" height="50" alt="Tabler"> <i>SEKOENOL</i>
         </div>
-        <form class="card card-md" action="." method="get" autocomplete="off">
+        <form class="card card-md" action="<?= base_url() ?>/login/cekUser" method="post" autocomplete="off">
             <div class="card-body">
                 <h2 class="card-title text-center mb-2">Silahkan Login</h2>
                 <div class="mb-3">
                     <label class="form-label">User ID</label>
-                    <input type="text" name="userid" id="userid" class="form-control" placeholder="Masukan User ID" autocomplete="off">
+                    <input type="text" name="userid" id="userid" class="form-control <?= (session()->getFlashdata('errUserId')) ? 'is-invalid' : '' ?>" placeholder="Masukan User ID" value="<?= old('userid') ?>" autocomplete="off" autofocus>
+                    <div id="validationServer03Feedback" class="invalid-feedback">
+                        <?= session()->getFlashdata('errUserId') ?>
+                    </div>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="form-label">
                         Password
                         <span class="form-label-description">
                             <a href="./forgot-password.html">Lupa Password</a>
                         </span>
                     </label>
-                    <div class="input-group input-group-flat">
-                        <input type="password" name="password" id="password" class="form-control" placeholder="Masukan Password" autocomplete="off">
+                    <input type="password" name="password" id="password" class="form-control <?= (session()->getFlashdata('errPassword')) ? 'is-invalid' : '' ?>" placeholder="Masukan Password" autocomplete="off">
+                    <div id="validationServer03Feedback" class="invalid-feedback">
+                        <?= session()->getFlashdata('errPassword') ?>
                     </div>
                 </div>
                 <div class="form-footer">
@@ -32,7 +36,7 @@
             </div>
         </form>
         <div class="text-center text-muted mt-3 mb-lg-5">
-            Belom punya akun ? <a href="<?= base_url() ?>/main/daftar" tabindex="-1">Daftar</a>
+            Belom punya akun ? <a href="<?= base_url() ?>/login/daftar" tabindex="-1">Daftar</a>
             <br><br><br><br><br><br>
         </div>
     </div>
