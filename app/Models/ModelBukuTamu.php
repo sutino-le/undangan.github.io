@@ -11,4 +11,10 @@ class ModelBukuTamu extends Model
     protected $allowedFields    = [
         'tamuuser', 'tamuhp', 'tamunama'
     ];
+
+
+    public function cariData($userid)
+    {
+        return $this->table('bukutamu')->like('tamuuser', $userid);
+    }
 }

@@ -1,0 +1,171 @@
+CRITICAL - 2022-06-08 03:57:19 --> Too few arguments to function App\Controllers\BukuTamu::formedit(), 0 passed in C:\xampp\htdocs\undangan\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit()
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-08 04:04:43 --> Too few arguments to function App\Controllers\BukuTamu::formedit(), 0 passed in C:\xampp\htdocs\undangan\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit()
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-08 04:04:57 --> Too few arguments to function App\Controllers\BukuTamu::formedit(), 0 passed in C:\xampp\htdocs\undangan\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit()
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-08 04:05:47 --> Too few arguments to function App\Controllers\BukuTamu::formedit(), 0 passed in C:\xampp\htdocs\undangan\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit()
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-08 04:06:13 --> Too few arguments to function App\Controllers\BukuTamu::formedit(), 0 passed in C:\xampp\htdocs\undangan\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit()
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-08 04:06:59 --> Too few arguments to function App\Controllers\BukuTamu::formedit(), 0 passed in C:\xampp\htdocs\undangan\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit()
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-08 04:09:34 --> Too few arguments to function App\Controllers\BukuTamu::formedit(), 0 passed in C:\xampp\htdocs\undangan\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit()
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-08 04:16:47 --> Undefined index: tamuid
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 158, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->update()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-08 04:17:34 --> Undefined index: tamuid
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 158, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->update()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-08 04:21:20 --> Trying to get property 'tamuid' of non-object
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 158, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->update()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-08 04:22:24 --> Undefined index: tamuid
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->update()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-08 04:23:34 --> Undefined index: tamuid
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->update()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-08 05:20:36 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\undangan\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('bukutamu/update')
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('bukutamu/update')
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-08 05:25:58 --> Too few arguments to function App\Controllers\BukuTamu::formedit(), 0 passed in C:\xampp\htdocs\undangan\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit()
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-08 05:27:21 --> Too few arguments to function App\Controllers\BukuTamu::formedit(), 0 passed in C:\xampp\htdocs\undangan\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit()
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-08 05:40:34 --> Undefined variable: tamuhplama
+#0 C:\xampp\htdocs\undangan\app\Views\tamu\formedit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('tamu/formedit', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(113): view('tamu/formedit', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit('1')
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-08 05:42:30 --> Undefined variable: tamuhplama
+#0 C:\xampp\htdocs\undangan\app\Views\tamu\formedit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('tamu/formedit', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(113): view('tamu/formedit', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit('1')
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-08 05:42:32 --> Undefined variable: tamuhplama
+#0 C:\xampp\htdocs\undangan\app\Views\tamu\formedit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('tamu/formedit', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(113): view('tamu/formedit', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit('1')
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-08 05:42:34 --> Undefined variable: tamuhplama
+#0 C:\xampp\htdocs\undangan\app\Views\tamu\formedit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('tamu/formedit', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(113): view('tamu/formedit', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit('1')
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-08 05:43:09 --> Undefined variable: tamuhplama
+#0 C:\xampp\htdocs\undangan\app\Views\tamu\formedit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('tamu/formedit', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(113): view('tamu/formedit', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->formedit('1')
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

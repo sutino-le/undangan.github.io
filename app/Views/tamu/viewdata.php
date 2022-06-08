@@ -28,12 +28,21 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>No.</td>
-            <td>Nama Lengkap</td>
-            <td>No. WhatsApp</td>
-            <td>#</td>
-        </tr>
+        <?php
+        $no = 1;
+        foreach ($tampildata as $row) :
+        ?>
+            <tr>
+                <td><?= $no++ ?></td>
+                <td><?= $row['tamunama'] ?></td>
+                <td><?= $row['tamuhp'] ?></td>
+                <td>
+                    <a href="<?= base_url() ?>/bukutamu/formedit/<?= $row['tamuid'] ?>" class="btn btn-sm m-auto btn-success"><i class="fas fa-edit"></i></a>
+                    <a href="<?= base_url() ?>/bukutamu/formedit/<?= $row['tamuid'] ?>" class="btn btn-sm m-auto btn-danger"><i class="fas fa-trash"></i></a>
+                    <a href="<?= base_url() ?>/bukutamu/formedit/<?= $row['tamuid'] ?>" class="btn btn-sm m-auto btn-primary"><i class="fas fa-paper-plane"></i></a>
+                </td>
+            </tr>
+        <?php endforeach ?>
     </tbody>
 </table>
 

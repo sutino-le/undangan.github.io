@@ -2,30 +2,6 @@
 
 <?= $this->section('isi') ?>
 
-<?php
-if (session()->getFlashdata('berhasil')) {
-?>
-    <script>
-        Swal.fire({
-            title: 'Berhasil',
-            text: "Data berhasil disimpan",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            cancelButtonText: 'Tidak',
-            confirmButtonText: 'Ya, Input Lagi!'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                window.location = "/bukutamu/formtambah";
-            } else {
-                window.location = "/bukutamu/index";
-            }
-        })
-    </script>
-<?php
-}
-?>
 
 <div class="col-md-12">
     <div class="card">
@@ -33,15 +9,17 @@ if (session()->getFlashdata('berhasil')) {
             <h3 class="card-title">Buku Tamu</h3>
         </div>
         <div class="card-body">
-            <form action="/bukutamu/simpan" method="POST">
+            <form action="<?= base_url() ?>/bukutamu/update" method="POST">
+
+                <input type="text" name="tamuid" id="tamuid" value="<?= (old('tamuid')) ? old('tamuid') : $tamuid ?>">
+                <input type="text" name="tamuuser" id="tamuuser" value="<?= (old('tamuuser')) ? old('tamuuser') : $tamuuser ?>">
+                <input type="text" name="tamuhplama" id="tamuhplama" value="<?= (old('tamuhplama')) ? old('tamuhplama') : $tamuhp ?>">
+
                 <div class="form-group mb-3 ">
                     <label class="form-label">Nomor WhatsApp</label>
                     <div>
                         <div class="input-group mb-2">
-                            <span class="input-group-text">
-                                +62
-                            </span>
-                            <input type="text" name="tamuhp" class="form-control <?= (session()->getFlashdata('errTamuHp')) ? 'is-invalid' : '' ?>" value="<?= old('tamuhp') ?>" placeholder="Nomor WhatsApp" autocomplete="off">
+                            <input type="text" name="tamuhp" class="form-control <?= (session()->getFlashdata('errTamuHp')) ? 'is-invalid' : '' ?>" value="<?= (old('tamuhp')) ? old('tamuhp') : $tamuhp ?>" placeholder="Nomor WhatsApp" autocomplete="off">
                             <?php
                             if (session()->getFlashdata('errTamuHp')) {
                             ?>
@@ -57,7 +35,7 @@ if (session()->getFlashdata('berhasil')) {
                 <div class="form-group mb-3 ">
                     <label class="form-label">Nama Lengkap</label>
                     <div>
-                        <input type="text" name="tamunama" class="form-control  <?= (session()->getFlashdata('errTamuNama')) ? 'is-invalid' : '' ?>" value="<?= old('tamunama') ?>" placeholder="Masukan Nama">
+                        <input type="text" name="tamunama" class="form-control  <?= (session()->getFlashdata('errTamuNama')) ? 'is-invalid' : '' ?>" value="<?= (old('tamunama')) ? old('tamunama') : $tamunama ?>" placeholder="Masukan Nama">
                         <?php
                         if (session()->getFlashdata('errTamuNama')) {
                         ?>

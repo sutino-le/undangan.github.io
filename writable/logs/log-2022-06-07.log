@@ -10,3 +10,167 @@ CRITICAL - 2022-06-07 05:13:12 --> Undefined variable: usernama
 #8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #10 {main}
+ERROR - 2022-06-07 20:30:29 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-06-07 20:30:29 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\undangan\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\undangan\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\undangan\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\undangan\app\Models\ModelBarang.php(18): CodeIgniter\Model->__call('get', Array)
+#4 C:\xampp\htdocs\undangan\app\Controllers\Main.php(21): App\Models\ModelBarang->tampildata()
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Main->index()
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-07 20:48:02 --> Object of class App\Models\ModelBukuTamu could not be converted to int
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->simpan()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-07 20:48:43 --> Object of class App\Models\ModelBukuTamu could not be converted to int
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->simpan()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-07 20:50:19 --> Object of class App\Models\ModelBukuTamu could not be converted to int
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->simpan()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-07 21:16:02 --> Call to undefined method App\Controllers\BukuTamu::session()
+#0 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->index()
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-07 21:19:50 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\undangan\app\Views\tamu\viewdata.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 33, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('tamu/viewdata', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(19): view('tamu/viewdata', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->index()
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-07 21:22:26 --> Object of class App\Models\ModelBukuTamu could not be converted to int
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->index()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-07 21:23:07 --> Undefined variable: tamuhp
+#0 C:\xampp\htdocs\undangan\app\Models\ModelBukuTamu.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(15): App\Models\ModelBukuTamu->cariData('lela')
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->index()
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#4 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-06-07 21:23:30 --> Object of class App\Models\ModelBukuTamu could not be converted to int
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->index()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-07 21:24:02 --> Object of class App\Models\ModelBukuTamu could not be converted to int
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->index()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-07 21:25:35 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\undangan\app\Views\tamu\viewdata.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 33, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('tamu/viewdata', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(30): view('tamu/viewdata', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->index()
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-07 21:29:46 --> Illegal string offset 'tamunama'
+#0 C:\xampp\htdocs\undangan\app\Views\tamu\viewdata.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('tamu/viewdata', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(35): view('tamu/viewdata', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->index()
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-07 21:29:56 --> Illegal string offset 'tamunama'
+#0 C:\xampp\htdocs\undangan\app\Views\tamu\viewdata.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('tamu/viewdata', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(35): view('tamu/viewdata', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->index()
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-07 21:30:22 --> Illegal string offset 'tamunama'
+#0 C:\xampp\htdocs\undangan\app\Views\tamu\viewdata.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 C:\xampp\htdocs\undangan\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('tamu/viewdata', Array, true)
+#4 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(35): view('tamu/viewdata', Array)
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->index()
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#7 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-06-07 21:39:20 --> Call to undefined method App\Models\ModelBukuTamuHp::cariData
+#0 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(18): CodeIgniter\Model->__call('cariData', Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->index()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-06-07 21:48:46 --> Duplicate entry '+6285810100913' for key 'tamuhp'
+CRITICAL - 2022-06-07 21:48:46 --> Duplicate entry '+6285810100913' for key 'tamuhp'
+#0 C:\xampp\htdocs\undangan\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\undangan\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\undangan\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\undangan\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\undangan\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\undangan\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\undangan\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\undangan\app\Controllers\BukuTamu.php(86): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\BukuTamu->simpan()
+#9 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuTamu))
+#10 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
