@@ -15,8 +15,23 @@
     });
 </script>
 
+<?php
+if (session()->getFlashdata('berhasil')) {
+?>
+    <script>
+        Swal.fire(
+            'Berhasil',
+            'Data berhasil diproses',
+            'success'
+        )
+    </script>
+<?php
+}
+?>
+
+
 <h2>Data Buku</h2>
-<button class="btn btn-primary mb-3 m-auto" onclick="tambah()" id="formtambah"><i class="fas fa-plus-circle"></i>&nbsp; Tambah Data</button>
+<button class="btn btn-sm btn-primary mb-3 m-auto" onclick="tambah()" id="formtambah"><i class="fas fa-plus-circle"></i>&nbsp; Tambah Data</button>
 
 <table id="bukutamu" class="table table-hover card-table table-vcenter text-nowrap datatable" style="width:100%">
     <thead>
@@ -38,7 +53,7 @@
                 <td><?= $row['tamuhp'] ?></td>
                 <td>
                     <a href="<?= base_url() ?>/bukutamu/formedit/<?= $row['tamuid'] ?>" class="btn btn-sm m-auto btn-success"><i class="fas fa-edit"></i></a>
-                    <a href="<?= base_url() ?>/bukutamu/formedit/<?= $row['tamuid'] ?>" class="btn btn-sm m-auto btn-danger"><i class="fas fa-trash"></i></a>
+                    <button class="btn btn-sm m-auto btn-danger" onclick="hapus('<?= $row['tamuid'] ?>')"><i class="fas fa-trash"></i></button>
                     <a href="<?= base_url() ?>/bukutamu/formedit/<?= $row['tamuid'] ?>" class="btn btn-sm m-auto btn-primary"><i class="fas fa-paper-plane"></i></a>
                 </td>
             </tr>
@@ -49,6 +64,24 @@
 <script>
     function tambah() {
         window.location.assign("/bukutamu/formtambah");
+    }
+
+    function hapus(tamuid) {
+        Swal.fire({
+            title: 'Hapus Data',
+            text: "Apakah Anda yakin ingin hapus ?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'Tidak',
+            confirmButtonText: 'Ya, Hapus !'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.assign("/bukutamu/hapus/" + tamuid);
+            }
+        })
+
     }
 </script>
 

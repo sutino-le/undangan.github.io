@@ -22,6 +22,7 @@ class BukuTamu extends BaseController
         return view('tamu/viewdata', $data);
     }
 
+    //menampilkan form tambah data
     public function formtambah()
     {
         $data = [
@@ -30,6 +31,7 @@ class BukuTamu extends BaseController
         return view('tamu/formtambah', $data);
     }
 
+    //menyimpan input data buku
     public function simpan()
     {
         $tamuuser = $this->request->getPost('tamuuser');
@@ -68,8 +70,8 @@ class BukuTamu extends BaseController
             session()->setFlashdata($sess_Pesan);
             return redirect()->to(site_url('bukutamu/formtambah'))->withInput()->with('validation', $validation);
         } else {
-            $modelbuku = new ModelBukuTamu();
-            $cariDataBuku = $modelbuku->where('tamuhp', $tamuhp)->findAll();
+            $modelbukuhp = new ModelBukuTamuHp();
+            $cariDataBuku = $modelbukuhp->find($tamuhp);
 
             if ($cariDataBuku > 0) {
                 $sess_Pesan = [
@@ -80,6 +82,7 @@ class BukuTamu extends BaseController
                 session()->setFlashdata($sess_Pesan);
                 return redirect()->to(site_url('bukutamu/formtambah'))->withInput()->with('validation', $validation);
             } else {
+                $modelbuku = new ModelBukuTamu();
                 $modelbuku->insert([
                     'tamuuser'      => $tamuuser,
                     'tamuhp'        => $tamuhp,
@@ -98,6 +101,8 @@ class BukuTamu extends BaseController
     }
 
 
+
+    //menampilkan form edit
     public function formedit($tamuid)
     {
         $modelbuku = new ModelBukuTamu();
@@ -113,6 +118,7 @@ class BukuTamu extends BaseController
         return view('tamu/formedit', $data);
     }
 
+    //edit buku tamu
     public function update()
     {
         $tamuid = $this->request->getPost('tamuid');
@@ -161,18 +167,35 @@ class BukuTamu extends BaseController
             session()->setFlashdata($sess_Pesan);
             return redirect()->to(site_url('bukutamu/formedit/' . $tamuid))->withInput()->with('validation', $validation);
         } else {
-            $modelbuku = new ModelBukuTamu();
-            $cariDataBuku = $modelbuku->where('tamuhp', $tamuhp)->findAll();
+            $modelbukuhp = new ModelBukuTamuHp();
+            $cariDataBuku = $modelbukuhp->find($tamuhp);
 
-            if ($tamuhplama != $tamuhp and $cariDataBuku > 0) {
-                $sess_Pesan = [
-                    'title'         => '| Buku Tamu',
-                    'errTamuHp'     => 'Nomor HP sudah ada'
-                ];
+            if ($tamuhplama != $tamuhp) {
+                if ($cariDataBuku > 0) {
+                    $sess_Pesan = [
+                        'title'         => '| Buku Tamu',
+                        'errTamuHp'     => 'Nomor HP sudah ada'
+                    ];
 
-                session()->setFlashdata($sess_Pesan);
-                return redirect()->to(site_url('bukutamu/formedit/' . $tamuid))->withInput()->with('validation', $validation);
+                    session()->setFlashdata($sess_Pesan);
+                    return redirect()->to(site_url('bukutamu/formedit/' . $tamuid))->withInput()->with('validation', $validation);
+                } else {
+                    $modelbuku = new ModelBukuTamu();
+                    $modelbuku->update($tamuid, [
+                        'tamuhp'        => $tamuhp,
+                        'tamunama'      => $tamunama,
+                    ]);
+
+                    $sess_Pesan = [
+                        'title'         => '| Buku Tamu',
+                        'berhasil'     => 'Data berhasil disimpan'
+                    ];
+
+                    session()->setFlashdata($sess_Pesan);
+                    return redirect()->to(site_url('bukutamu/index'))->withInput()->with('validation', $validation);
+                }
             } else {
+                $modelbuku = new ModelBukuTamu();
                 $modelbuku->update($tamuid, [
                     'tamuhp'        => $tamuhp,
                     'tamunama'      => $tamunama,
@@ -187,5 +210,22 @@ class BukuTamu extends BaseController
                 return redirect()->to(site_url('bukutamu/index'))->withInput()->with('validation', $validation);
             }
         }
+    }
+
+
+    public function hapus($tamuid)
+    {
+        $modelbuku = new ModelBukuTamu();
+        $modelbuku->delete($tamuid);
+
+        $validation = \Config\Services::validation();
+
+        $sess_Pesan = [
+            'title'         => '| Buku Tamu',
+            'berhasil'     => 'Data berhasil disimpan'
+        ];
+
+        session()->setFlashdata($sess_Pesan);
+        return redirect()->to(site_url('bukutamu/index'))->withInput()->with('validation', $validation);
     }
 }

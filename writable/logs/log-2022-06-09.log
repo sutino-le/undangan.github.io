@@ -1,0 +1,10 @@
+CRITICAL - 2022-06-09 02:43:21 --> Invalid file: undangan/index.php
+#0 C:\xampp\htdocs\undangan\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('undangan/index....')
+#1 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('undangan/index', Array, true)
+#2 C:\xampp\htdocs\undangan\app\Controllers\Undangan.php(11): view('undangan/index')
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Undangan->index()
+#4 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Undangan))
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}

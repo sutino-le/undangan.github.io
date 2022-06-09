@@ -103,8 +103,19 @@
                                                         </span>
                                                         <span class="nav-link-title">
                                                             Buku Tamu
+
+                                                        </span>
                                                     </a>
-                                                    </span>
+                                                    <a class="dropdown-item" href="<?= base_url() ?>/bukutamu/index">
+                                                        <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                                            <i class='fas fa-book' style='font-size:14px;color:#33adff'></i>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="nav-link-title">
+                                                            Buku Tamu
+
+                                                        </span>
+                                                    </a>
                                                 </div>
 
                                             </div>

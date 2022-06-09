@@ -11,9 +11,9 @@
         <div class="card-body">
             <form action="<?= base_url() ?>/bukutamu/update" method="POST">
 
-                <input type="text" name="tamuid" id="tamuid" value="<?= (old('tamuid')) ? old('tamuid') : $tamuid ?>">
-                <input type="text" name="tamuuser" id="tamuuser" value="<?= (old('tamuuser')) ? old('tamuuser') : $tamuuser ?>">
-                <input type="text" name="tamuhplama" id="tamuhplama" value="<?= (old('tamuhplama')) ? old('tamuhplama') : $tamuhp ?>">
+                <input type="hidden" name="tamuid" id="tamuid" value="<?= (old('tamuid')) ? old('tamuid') : $tamuid ?>">
+                <input type="hidden" name="tamuuser" id="tamuuser" value="<?= (old('tamuuser')) ? old('tamuuser') : $tamuuser ?>">
+                <input type="hidden" name="tamuhplama" id="tamuhplama" value="<?= (old('tamuhplama')) ? old('tamuhplama') : $tamuhp ?>">
 
                 <div class="form-group mb-3 ">
                     <label class="form-label">Nomor WhatsApp</label>
