@@ -1,0 +1,8 @@
+CRITICAL - 2022-06-10 04:20:02 --> Call to undefined method App\Models\ModelMempelaiSatu::tampildata
+#0 C:\xampp\htdocs\undangan\app\Controllers\Mempelai.php(23): CodeIgniter\Model->__call('tampildata', Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Mempelai->satu()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mempelai))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

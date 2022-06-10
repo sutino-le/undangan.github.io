@@ -99,41 +99,42 @@
                                                     <a class="dropdown-item" href="<?= base_url() ?>/bukutamu/index">
                                                         <span class="nav-link-icon d-md-none d-lg-inline-block">
                                                             <i class='fas fa-book' style='font-size:14px;color:#33adff'></i>
-                                                            </svg>
                                                         </span>
                                                         <span class="nav-link-title">
                                                             Buku Tamu
 
                                                         </span>
                                                     </a>
-                                                    <a class="dropdown-item" href="<?= base_url() ?>/bukutamu/index">
-                                                        <span class="nav-link-icon d-md-none d-lg-inline-block">
-                                                            <i class='fas fa-book' style='font-size:14px;color:#33adff'></i>
-                                                            </svg>
-                                                        </span>
-                                                        <span class="nav-link-title">
-                                                            Buku Tamu
-
-                                                        </span>
-                                                    </a>
-                                                </div>
-
-                                            </div>
-                                            <div class="dropdown-menu-column">
-                                                <a class="dropdown-item" href="./charts.html">
-                                                    Charts
-                                                </a>
-
-                                                <div class="dropend">
-                                                    <a class="dropdown-item dropdown-toggle" href="#sidebar-authentication" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false">
-                                                        Authentication
-                                                    </a>
-                                                    <div class="dropdown-menu">
-                                                        <a href="./sign-in.html" class="dropdown-item">
-                                                            Sign in
+                                                    <div class="dropend">
+                                                        <a class="dropdown-item dropdown-toggle" href="#sidebar-authentication" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false">
+                                                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                                                <i class='fas fa-glass-cheers' style='font-size:14px;color:#33adff'></i>
+                                                            </span>
+                                                            <span class="nav-link-title">
+                                                                Mempelai
+                                                            </span>
                                                         </a>
+                                                        <div class="dropdown-menu">
+                                                            <a href="<?= base_url() ?>/mempelai/satu" class="dropdown-item">
+                                                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                                                    <i class='fas fa-gem' style='font-size:14px;color:#33adff'></i>
+                                                                </span>
+                                                                <span class="nav-link-title">
+                                                                    Satu
+                                                                </span>
+                                                            </a>
+                                                            <a href="<?= base_url() ?>/mempelai/dua" class="dropdown-item">
+                                                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                                                    <i class='fas fa-gem' style='font-size:14px;color:#33adff'></i>
+                                                                </span>
+                                                                <span class="nav-link-title">
+                                                                    Dua
+                                                                </span>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>

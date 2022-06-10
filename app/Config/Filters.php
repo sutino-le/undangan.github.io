@@ -39,20 +39,20 @@ class Filters extends BaseConfig
             // 'csrf',
             // 'invalidchars',
             'filterAdmin' => [
-                'except' => ['main/*', 'login/*', '/']
+                'except' => ['main/*', 'login/*', 'undangan/*',  '/']
             ],
             'filterUser' => [
-                'except' => ['main/*', 'login/*', '/']
+                'except' => ['main/*', 'login/*', 'undangan/*',  '/']
             ]
         ],
         'after' => [
             // 'honeypot',
             // 'secureheaders',
             'filterAdmin' => [
-                'except' => ['main/*', 'bukutamu/*', 'undangan/*', 'wilayah/*', 'levels/*', 'users/*', 'biodataktp/*']
+                'except' => ['main/*', 'bukutamu/*', 'undangan/*', 'mempelai/*',]
             ],
             'filterUser' => [
-                'except' => ['main/*', 'bukutamu/*', 'undangan/*',]
+                'except' => ['main/*', 'bukutamu/*', 'undangan/*', 'mempelai/*',]
             ],
             'toolbar',
         ],
