@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 01 Jun 2022 pada 12.24
+-- Waktu pembuatan: 10 Jun 2022 pada 12.29
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -49,6 +49,27 @@ INSERT INTO `barang` (`brgid`, `brgnama`, `brgkat`, `brgsubkat`, `brgharga`, `br
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `bukutamu`
+--
+
+CREATE TABLE `bukutamu` (
+  `tamuid` int(11) NOT NULL,
+  `tamuuser` varchar(100) NOT NULL,
+  `tamuhp` varchar(30) NOT NULL,
+  `tamunama` varchar(225) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `bukutamu`
+--
+
+INSERT INTO `bukutamu` (`tamuid`, `tamuuser`, `tamuhp`, `tamunama`) VALUES
+(3, 'lela', '+628120000', 'tino'),
+(5, 'tino', '+6285810100913', 'Sutino');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `kategori`
 --
 
@@ -82,6 +103,69 @@ CREATE TABLE `levels` (
 INSERT INTO `levels` (`levelid`, `levelnama`) VALUES
 (1, 'Admin'),
 (2, 'User');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `mempelaiacara`
+--
+
+CREATE TABLE `mempelaiacara` (
+  `acarauser` varchar(100) NOT NULL,
+  `akadtanggal` date NOT NULL,
+  `akadjamawal` time NOT NULL,
+  `akadjamakhir` time NOT NULL,
+  `resepsitanggal` date NOT NULL,
+  `resepsijamawal` time NOT NULL,
+  `resepsijamakhir` time NOT NULL,
+  `alamatlengkap` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `mempelaidua`
+--
+
+CREATE TABLE `mempelaidua` (
+  `nikahduauser` varchar(100) NOT NULL,
+  `nikahduanamapenggilan` varchar(225) NOT NULL,
+  `nikahduanamalengkap` varchar(100) NOT NULL,
+  `nikahduajenis` varchar(15) NOT NULL,
+  `nikahduakeluarga` text NOT NULL,
+  `nikahduaalamat` text NOT NULL,
+  `nikahduaalamatid` int(11) NOT NULL,
+  `mempelaiduafoto` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `mempelaigaleri`
+--
+
+CREATE TABLE `mempelaigaleri` (
+  `galeriid` int(11) NOT NULL,
+  `galeriuser` varchar(100) NOT NULL,
+  `galerifoto` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `mempelaisatu`
+--
+
+CREATE TABLE `mempelaisatu` (
+  `nikahsatuuser` varchar(100) NOT NULL,
+  `nikahsatunamapanggilan` varchar(225) NOT NULL,
+  `nikahsatunamalengkap` varchar(100) NOT NULL,
+  `nikahsatujenis` varchar(15) NOT NULL,
+  `nikahsatukeluarga` text NOT NULL,
+  `nikahsatualamat` text NOT NULL,
+  `nikahsatualamatid` int(11) NOT NULL,
+  `mempelaisatufoto` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -150,7 +234,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`userid`, `usernama`, `userfoto`, `useremail`, `userpassword`, `userlevelid`) VALUES
 ('admin', 'Administrator', '1808051201920006', 'sutino1201@gmail.com', '$2y$10$sMF3UrdmlFt8RcDq5qO.ruMf3RG6kSiNNKcL4LQ47Lw0ZCMc8L0ZO', 1),
-('Tino', 'Sutino aja', '1234567890123456', 'tino@gmail.com', '$2y$10$V3.pAbIIAOhrYP1ZeHyQV.oFWv6LgFUttx0vUxHACzEIm8zxmHR12', 2);
+('lela', 'Lela Setiana', '', 'lelasetia10@gmail.com', '$2y$10$vPTgZozOC/w.GLz9K8nGEepJ/JGCHgWY3XpGbB9bTlcMNDncSde9G', 2),
+('Tino', 'Sutino', '', 'tino@gmail.com', '$2y$10$QQ1xRtqLAkk2IqY1.gp1hOrLic7ohZpnaD90DEaZQPV4f/BAEmMve', 2);
 
 --
 -- Indexes for dumped tables
@@ -163,6 +248,13 @@ ALTER TABLE `barang`
   ADD PRIMARY KEY (`brgid`) USING BTREE;
 
 --
+-- Indeks untuk tabel `bukutamu`
+--
+ALTER TABLE `bukutamu`
+  ADD PRIMARY KEY (`tamuid`),
+  ADD UNIQUE KEY `tamuhp` (`tamuhp`);
+
+--
 -- Indeks untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
@@ -173,6 +265,30 @@ ALTER TABLE `kategori`
 --
 ALTER TABLE `levels`
   ADD KEY `levelid` (`levelid`);
+
+--
+-- Indeks untuk tabel `mempelaiacara`
+--
+ALTER TABLE `mempelaiacara`
+  ADD PRIMARY KEY (`acarauser`);
+
+--
+-- Indeks untuk tabel `mempelaidua`
+--
+ALTER TABLE `mempelaidua`
+  ADD PRIMARY KEY (`nikahduauser`);
+
+--
+-- Indeks untuk tabel `mempelaigaleri`
+--
+ALTER TABLE `mempelaigaleri`
+  ADD PRIMARY KEY (`galeriid`);
+
+--
+-- Indeks untuk tabel `mempelaisatu`
+--
+ALTER TABLE `mempelaisatu`
+  ADD PRIMARY KEY (`nikahsatuuser`);
 
 --
 -- Indeks untuk tabel `migrations`
@@ -204,10 +320,22 @@ ALTER TABLE `barang`
   MODIFY `brgid` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT untuk tabel `bukutamu`
+--
+ALTER TABLE `bukutamu`
+  MODIFY `tamuid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
   MODIFY `katid` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `mempelaigaleri`
+--
+ALTER TABLE `mempelaigaleri`
+  MODIFY `galeriid` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `migrations`
