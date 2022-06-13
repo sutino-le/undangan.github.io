@@ -13,8 +13,10 @@ class Undangan extends BaseController
         $cekData = $modelUser->find($userid);
 
 
-        $data = [];
-        return view('undangan/index');
+        $data = [
+            'usernama' => $cekData['usernama']
+        ];
+        return view('undangan/index', $data);
     }
 
     public function slide()

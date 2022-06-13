@@ -31,7 +31,7 @@
 
 
         button:hover {
-            background-color: #28bf7b;
+            background-color: rgb(248, 77, 171);
         }
 
         h1 {
@@ -45,7 +45,7 @@
 
     <nav class="navbar fixed-bottom navbar-expand-lg navbar-light">
 
-        <button class="btn m-auto" title="Buka Undangan"><i class='fas fa-envelope-open-text' style='font-size:48px; color:white; text-shadow: 2px 2px 10px rgb(248, 77, 171);'></i></button>
+        <button class="btn m-auto" title="Buka Undangan"><i class='fas fa-envelope-open-text' style='font-size:48px; color:white; text-shadow: 2px 2px 10px rgb(8, 8, 8);'></i></button>
 
     </nav>
 
@@ -55,12 +55,13 @@
                 <div class="carousel-item active">
                     <img src="<?= base_url() ?>/upload/DSC08243.jpg" alt="Los Angeles" style="width:100%; opacity: 0.8;">
                     <div class="carousel-caption">
-                        <h3 class="Brotherhood_Script" style="font-size:48px; margin-top:-500px;"> Lela &nbsp; <img src="<?= base_url() ?>/upload/engagement-ring.png" width="50px"> &nbsp; Tino </h3>
-                        <p class="elegant-theme-line" style="font-size:24px;">24 Juni 2022</p>
+                        <h3 class="Handycheera_Regular" style="font-size:48px; margin-top:-600px;">The Wedding </h3>
+                        <h3 class="Brotherhood_Script" style="font-size:72px; margin-top:0px;"> Lela &nbsp; <img src="<?= base_url() ?>/upload/engagement-ring.png" width="50px"> &nbsp; Tino </h3>
+                        <p class="Handycheera_Regular" style="font-size:24px; text-shadow: 2px 2px 10px rgb(248, 77, 171)">24 Juni 2022</p>
 
                         <p class="card-text" style="font-size: 14px; text-shadow: 2px 2px 10px rgb(248, 77, 171);">
                             <br>
-                            <br><br><br><br><br><br><br><br>
+                            <br><br><br><br><br><br><br>
                         </p>
 
 
@@ -71,6 +72,8 @@
                                 <p class="card-text" style="font-size: 12px; color:white; ">di <br> Tempat</p>
                             </div>
                         </div>
+                        <br>
+                        <p>Mohon maaf apabila ada kesalahan dalam penulisan nama atau gelar</p>
 
                     </div>
                 </div>
