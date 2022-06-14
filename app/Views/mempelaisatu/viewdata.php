@@ -30,43 +30,43 @@ if (session()->getFlashdata('berhasil')) {
 ?>
 
 
-<h2>Data Buku</h2>
-<button class="btn btn-sm btn-primary mb-3 m-auto" onclick="tambah()" id="formtambah"><i class="fas fa-plus-circle"></i>&nbsp; Tambah Data</button>
+<h2>Data Mempelai</h2>
 
-<table id="bukutamu" class="table table-hover card-table table-vcenter text-nowrap datatable" style="width:100%">
-    <thead>
-        <tr>
-            <th>No.</th>
-            <th>Nama Lengkap</th>
-            <th>No. WhatsApp</th>
-            <th>#</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php
-        $no = 1;
-        foreach ($tampildata as $row) :
-        ?>
-            <tr>
-                <td><?= $no++ ?></td>
-                <td><?= $row['tamunama'] ?></td>
-                <td><?= $row['tamuhp'] ?></td>
-                <td>
-                    <a href="<?= base_url() ?>/bukutamu/formedit/<?= $row['tamuid'] ?>" class="btn btn-sm m-auto btn-success"><i class="fas fa-edit"></i></a>
-                    <button class="btn btn-sm m-auto btn-danger" onclick="hapus('<?= $row['tamuid'] ?>')"><i class="fas fa-trash"></i></button>
-                    <a href="<?= base_url() ?>/bukutamu/formedit/<?= $row['tamuid'] ?>" class="btn btn-sm m-auto btn-primary"><i class="fas fa-paper-plane"></i></a>
-                </td>
-            </tr>
-        <?php endforeach ?>
-    </tbody>
-</table>
+<?php
+foreach ($tampildata as $row) :
+?>
+    <div class="col-md-6 col-lg-6 m-auto">
+        <div class="card">
+            <div class="ribbon bg-primary">
+                <button class="btn btn-primary" onclick="tambah()"><i class="fas fa-plus"></i></button>
+                <button class="btn btn-primary" onclick="edit('<?= $row['nikahsatuuser'] ?>')">><i class="fas fa-edit"></i></button>
+                <button class="btn btn-primary" onclick="hapus('<?= $row['nikahsatuuser'] ?>')">><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="card-body">
+                <div class="card-body p-4 text-center">
+                    <span class="avatar avatar-xl mb-3 avatar-rounded" style="background-image: url(./static/avatars/002m.jpg)"></span>
+                    <h3 class="m-0 mb-1"><a href="#">Mallory Hulme</a></h3>
+                    <div class="text-muted">Geologist IV</div>
+                    <div class="mt-3">
+                        <span class="badge bg-green-lt">Admin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endforeach ?>
+
+
+
+
+
 
 <script>
     function tambah() {
-        window.location.assign("/bukutamu/formtambah");
+        window.location.assign("/mempelai/formtambahsatu");
     }
 
-    function hapus(tamuid) {
+    function hapus(nikahsatuuser) {
         Swal.fire({
             title: 'Hapus Data',
             text: "Apakah Anda yakin ingin hapus ?",
@@ -78,7 +78,7 @@ if (session()->getFlashdata('berhasil')) {
             confirmButtonText: 'Ya, Hapus !'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.assign("/bukutamu/hapus/" + tamuid);
+                window.location.assign("/mempelai/hapussatu/" + nikahsatuuser);
             }
         })
 

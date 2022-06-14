@@ -9,6 +9,6 @@ class ModelMempelaiSatu extends Model
     protected $table            = 'mempelaisatu';
     protected $primaryKey       = 'nikahsatuuser';
     protected $allowedFields    = [
-        'nikahsatuuser', 'nikahsatunamapanggilan', 'nikahsatunamalengkap', 'nikahsatujenis', 'nikahsatukeluarga', 'nikahsatualamat', 'nikahsatualamatid'
+        'nikahsatuuser', 'nikahsatunamapanggilan', 'nikahsatunamalengkap', 'nikahsatujenis', 'nikahsatukeluarga', 'nikahsatualamat'
     ];
 }

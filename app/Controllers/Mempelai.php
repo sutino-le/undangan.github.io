@@ -18,9 +18,12 @@ class Mempelai extends BaseController
 
     public function satu()
     {
+
+        $userid = session()->userid;
+        $modelMempelaiSatu = new ModelMempelaiSatu();
         $data = [
             'title' => 'Mempelai',
-            'tampildata' => $this->mempelaisatu->tampildata()
+            'tampildata' => $modelMempelaiSatu->where('nikahsatuuser', $userid)->findAll()
         ];
         return view('mempelaisatu/viewdata', $data);
     }
