@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Jun 2022 pada 12.52
+-- Waktu pembuatan: 15 Jun 2022 pada 12.42
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -129,14 +129,20 @@ CREATE TABLE `mempelaiacara` (
 
 CREATE TABLE `mempelaidua` (
   `nikahduauser` varchar(100) NOT NULL,
-  `nikahduanamapenggilan` varchar(225) NOT NULL,
+  `nikahduanamapanggilan` varchar(225) NOT NULL,
   `nikahduanamalengkap` varchar(100) NOT NULL,
   `nikahduajenis` varchar(15) NOT NULL,
   `nikahduakeluarga` text NOT NULL,
   `nikahduaalamat` text NOT NULL,
-  `nikahduaalamatid` int(11) NOT NULL,
   `mempelaiduafoto` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `mempelaidua`
+--
+
+INSERT INTO `mempelaidua` (`nikahduauser`, `nikahduanamapanggilan`, `nikahduanamalengkap`, `nikahduajenis`, `nikahduakeluarga`, `nikahduaalamat`, `mempelaiduafoto`) VALUES
+('lela', 'Tino', 'Sutino S.Kom', 'Putra dari', 'Bpk. Panimin & Ibu Sunarti', 'Moro Seneng RT.04 RW.02 Bumi Agung Wates, Bahuga, Way Kanan', '');
 
 -- --------------------------------------------------------
 
@@ -159,13 +165,19 @@ CREATE TABLE `mempelaigaleri` (
 CREATE TABLE `mempelaisatu` (
   `nikahsatuuser` varchar(100) NOT NULL,
   `nikahsatunamapanggilan` varchar(225) NOT NULL,
-  `nikahsatunamalengkap` varchar(100) NOT NULL,
+  `nikahsatunamalengkap` text NOT NULL,
   `nikahsatujenis` varchar(15) NOT NULL,
   `nikahsatukeluarga` text NOT NULL,
   `nikahsatualamat` text NOT NULL,
-  `nikahsatualamatid` int(11) NOT NULL,
   `mempelaisatufoto` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `mempelaisatu`
+--
+
+INSERT INTO `mempelaisatu` (`nikahsatuuser`, `nikahsatunamapanggilan`, `nikahsatunamalengkap`, `nikahsatujenis`, `nikahsatukeluarga`, `nikahsatualamat`, `mempelaisatufoto`) VALUES
+('lela', 'Lela', 'Lela Setiana A.Md. A.B.', 'Putri dari', 'Bpk. Medi & Ibu Bariah', 'Desa Banjaran RT.17 RW.09, Bojongsari, Purbalingga', '');
 
 -- --------------------------------------------------------
 

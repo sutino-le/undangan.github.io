@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Lela & Tino</title>
+    <title><?= $nikahsatunamapanggilan ?> & Tino</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -56,7 +56,7 @@
                     <img src="<?= base_url() ?>/upload/DSC08243.jpg" alt="Los Angeles" style="width:100%; opacity: 0.8;">
                     <div class="carousel-caption">
                         <h3 class="Handycheera_Regular" style="font-size:48px; margin-top:-600px;">The Wedding </h3>
-                        <h3 class="Brotherhood_Script" style="font-size:72px; margin-top:0px;"> Lela &nbsp; <img src="<?= base_url() ?>/upload/engagement-ring.png" width="50px"> &nbsp; Tino </h3>
+                        <h3 class="Brotherhood_Script" style="font-size:72px; margin-top:0px;"> <?= $nikahsatunamapanggilan ?> &nbsp; <img src="<?= base_url() ?>/upload/engagement-ring.png" width="50px"> &nbsp; Tino </h3>
                         <p class="Handycheera_Regular" style="font-size:24px; text-shadow: 2px 2px 10px rgb(248, 77, 171)">24 Juni 2022</p>
 
                         <p class="card-text" style="font-size: 14px; text-shadow: 2px 2px 10px rgb(248, 77, 171);">

@@ -47,8 +47,8 @@
                 </div>
 
                 <div class="form-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="button" class="btn btn-danger" onclick="batal()">Batal</button>
+                    <button type="button" class="btn  btn-outline-info btn-danger" onclick="batal()">Batal</button>
+                    <button type="submit" class="btn  btn-outline-info btn-primary">Simpan</button>
                 </div>
             </form>
         </div>

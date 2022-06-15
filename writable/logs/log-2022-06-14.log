@@ -49,3 +49,81 @@ CRITICAL - 2022-06-14 04:24:25 --> Invalid argument supplied for foreach()
 #8 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #10 {main}
+CRITICAL - 2022-06-14 20:56:06 --> syntax error, unexpected '}', expecting variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\undangan\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('mempelai/formta...')
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('mempelai/formta...')
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-14 23:19:45 --> Undefined property: App\Controllers\Mempelai::$load
+#0 C:\xampp\htdocs\undangan\app\Controllers\Mempelai.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 56, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Mempelai->simpansatu()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mempelai))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-14 23:19:55 --> Undefined property: App\Controllers\Mempelai::$load
+#0 C:\xampp\htdocs\undangan\app\Controllers\Mempelai.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 56, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Mempelai->simpansatu()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mempelai))
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-14 23:20:07 --> Undefined property: App\Controllers\Mempelai::$load
+#0 C:\xampp\htdocs\undangan\app\Controllers\Mempelai.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(809): App\Controllers\Mempelai->__construct()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-14 23:26:52 --> Call to undefined function form_open_multipart()
+#0 C:\xampp\htdocs\undangan\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('mempelaisatu/fo...', Array, true)
+#3 C:\xampp\htdocs\undangan\app\Controllers\Mempelai.php(42): view('mempelaisatu/fo...', Array)
+#4 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Mempelai->formtambahsatu()
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mempelai))
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-06-14 23:35:21 --> Undefined property: App\Controllers\Mempelai::$load
+#0 C:\xampp\htdocs\undangan\app\Controllers\Mempelai.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(809): App\Controllers\Mempelai->__construct()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-06-14 23:35:29 --> Call to undefined method App\Controllers\Mempelai::helper()
+#0 C:\xampp\htdocs\undangan\system\CodeIgniter.php(809): App\Controllers\Mempelai->__construct()
+#1 C:\xampp\htdocs\undangan\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-06-14 23:37:10 --> Call to undefined function form_opent()
+#0 C:\xampp\htdocs\undangan\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\undangan\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\undangan\system\Common.php(1089): CodeIgniter\View\View->render('mempelaisatu/fo...', Array, true)
+#3 C:\xampp\htdocs\undangan\app\Controllers\Mempelai.php(43): view('mempelaisatu/fo...', Array)
+#4 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Mempelai->formtambahsatu()
+#5 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mempelai))
+#6 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-06-14 23:48:17 --> nikahsatuuser is not a valid Validation template.
+#0 C:\xampp\htdocs\undangan\system\Validation\Validation.php(485): CodeIgniter\Validation\Exceptions\ValidationException::forInvalidTemplate('nikahsatuuser')
+#1 C:\xampp\htdocs\undangan\app\Controllers\Mempelai.php(114): CodeIgniter\Validation\Validation->listErrors('nikahsatuuser')
+#2 C:\xampp\htdocs\undangan\system\CodeIgniter.php(832): App\Controllers\Mempelai->simpansatu()
+#3 C:\xampp\htdocs\undangan\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mempelai))
+#4 C:\xampp\htdocs\undangan\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\undangan\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\undangan\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}

@@ -44,17 +44,17 @@ foreach ($tampildata as $row) :
     <div class="col-md-6 col-lg-6 m-auto">
         <div class="card">
             <div class="ribbon bg-primary">
-                <button class="btn btn-primary" onclick="edit('<?= $row['nikahsatuuser'] ?>')"><i class="fas fa-edit"></i></button>
-                <button class="btn btn-primary" onclick="hapus('<?= $row['nikahsatuuser'] ?>')"><i class="fas fa-trash"></i></button>
+                <button class="btn btn-primary" onclick="edit('<?= $row['nikahduauser'] ?>')"><i class="fas fa-edit"></i></button>
+                <button class="btn btn-primary" onclick="hapus('<?= $row['nikahduauser'] ?>')"><i class="fas fa-trash"></i></button>
             </div>
             <div class="card-body">
                 <div class="card-body p-4 text-center">
                     <span class="avatar avatar-xl mb-3 avatar-rounded" style="background-image: url(./static/avatars/002m.jpg)"></span>
-                    <div class="text-muted">( <?= $row['nikahsatunamapanggilan'] ?> )</div>
-                    <h3 class="m-0 mb-1"><a href="#"><?= $row['nikahsatunamalengkap'] ?></a></h3>
-                    <div class="text-muted"><?= $row['nikahsatujenis'] ?></div>
-                    <h3 class="m-0 mb-1"><a href="#"><?= $row['nikahsatukeluarga'] ?></a></h3>
-                    <div class="text-muted"><?= $row['nikahsatualamat'] ?></div>
+                    <div class="text-muted">( <?= $row['nikahduanamapanggilan'] ?> )</div>
+                    <h3 class="m-0 mb-1"><a href="#"><?= $row['nikahduanamalengkap'] ?></a></h3>
+                    <div class="text-muted"><?= $row['nikahduajenis'] ?></div>
+                    <h3 class="m-0 mb-1"><a href="#"><?= $row['nikahduakeluarga'] ?></a></h3>
+                    <div class="text-muted"><?= $row['nikahduaalamat'] ?></div>
                 </div>
             </div>
         </div>
@@ -68,10 +68,10 @@ foreach ($tampildata as $row) :
 
 <script>
     function tambah() {
-        window.location.assign("/mempelai/formtambahsatu");
+        window.location.assign("/mempelai/formtambahdua");
     }
 
-    function hapus(nikahsatuuser) {
+    function hapus(nikahduauser) {
         Swal.fire({
             title: 'Hapus Data',
             text: "Apakah Anda yakin ingin hapus ?",
@@ -83,7 +83,7 @@ foreach ($tampildata as $row) :
             confirmButtonText: 'Ya, Hapus !'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.assign("/mempelai/hapussatu/" + nikahsatuuser);
+                window.location.assign("/mempelai/hapusdua/" + nikahduauser);
             }
         })
 

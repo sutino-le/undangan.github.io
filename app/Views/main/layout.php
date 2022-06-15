@@ -284,8 +284,48 @@
     <script src="<?= base_url() ?>/dist/libs/jsvectormap/dist/js/jsvectormap.min.js" defer></script>
     <script src="<?= base_url() ?>/dist/libs/jsvectormap/dist/maps/world.js" defer></script>
     <script src="<?= base_url() ?>/dist/libs/jsvectormap/dist/maps/world-merc.js" defer></script>
+
+
+    <script src="<?= base_url() ?>/dist/libs/nouislider/dist/nouislider.min.js" defer></script>
+    <script src="<?= base_url() ?>/dist/libs/litepicker/dist/litepicker.js" defer></script>
+    <script src="<?= base_url() ?>/dist/libs/tom-select/dist/js/tom-select.base.min.js" defer></script>
+
+
     <!-- Tabler Core -->
     <script src="<?= base_url() ?>/dist/js/tabler.min.js" defer></script>
+
+
+
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function() {
+            var el;
+            window.TomSelect && (new TomSelect(el = document.getElementById('select-tags-advanced'), {
+                copyClassesToDropdown: false,
+                dropdownClass: 'dropdown-menu',
+                optionClass: 'dropdown-item',
+                controlInput: '<input>',
+                render: {
+                    item: function(data, escape) {
+                        if (data.customProperties) {
+                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+                        }
+                        return '<div>' + escape(data.text) + '</div>';
+                    },
+                    option: function(data, escape) {
+                        if (data.customProperties) {
+                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+                        }
+                        return '<div>' + escape(data.text) + '</div>';
+                    },
+                },
+            }));
+        });
+        // @formatter:on
+    </script>
+
+
+
 
 
 
