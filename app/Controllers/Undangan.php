@@ -24,8 +24,8 @@ class Undangan extends BaseController
         return view('undangan/index', $data);
     }
 
-    public function slide()
+    public function isi()
     {
-        return view('undangan/slide');
+        return view('undangan/isi');
     }
 }

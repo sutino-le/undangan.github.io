@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Brotherhood_Script";
+  src: url("../fonts/Brotherhood_Script.ttf");
+}
+
+@font-face {
+  font-family: "Handycheera_Regular";
+  src: url("../fonts/Handycheera_Regular.otf");
+}
+
+@font-face {
+  font-family: "elegant-theme-line";
+  src: url("../fonts/elegant-theme-line.ttf");
+}
+
+.Brotherhood_Script {
+  font-family: "Brotherhood_Script";
+  text-shadow: 2px 2px 10px rgb(248, 77, 171);
+  font-weight: bold;
+}
+
+.Handycheera_Regular {
+  font-family: "Handycheera_Regular";
+}
+
+.elegant-theme-line {
+  font-family: "Handycheera_Regular";
+  text-shadow: 2px 2px 10px rgb(248, 77, 171);
+  font-weight: bold;
+}
